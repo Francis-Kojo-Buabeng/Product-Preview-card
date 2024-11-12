@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", serif;
+    background-color: var(--Very-dark-blue);
+    height: 100vh;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Cream);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.photo-section{
+    margin-bottom: 0;
+}
+
+.mobile-display{
+    width: 300px;
+    border-top-left-radius: 0.652rem;
+    border-top-right-radius: 0.652rem;
+}
+
+.content-section{
+    background-color: var(--White);
+    width: 300px;
+    margin-top: -5px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 0.652rem;
+    border-bottom-right-radius: 0.652rem;
+}
+
+.card-info{
+    width: 280px;
+    margin-left: 20px;
+}
+
+#top-header{
+    margin-top: 20px;
+    margin-right: 200px;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-size: 0.65rem;
+    font-weight: 100;
+    color: var(--Dark-grayish-blue);
+}
+
+#middle-header h1{
+    font-family: "Fraunces", serif;
+}
+
+p{
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
+    font-family: "Fraunces", sans-serif;
+    color: var(--Dark-grayish-blue);
+}
+
+.price{
+    display: flex;
+}
+#due-price{
+    margin-top: 20px;
+    font-family: "Fraunces",sans-serif;
+    font-size: 1.6rem;
+    color: var(--Darkcyan);
+}
+
+#actual-price{
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    border: none;
+    color: #fff;
+    width: 90%;
+    margin-top: 20px;
+    background-color: var(--Darkcyan);
+    border-radius: 0.6rem;
+}
+button:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 575px){
+    body{
+        background-color: var(--Cream);
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        background-color: var(--White);
+        flex-direction: row;
+    }
+    .mobile-display{
+        background-image: url(images/image-product-desktop.jpg);
+        width: 250px;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        border-radius: 0;
+    }
+    .content-section{
+        padding-right: -20px;
+        border-radius: 0;
+    }
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
